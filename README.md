@@ -33,6 +33,3 @@ A full-stack **MERN** (MongoDB, Express.js, React, Node.js) application to manag
 - CORS, dotenv
 
 ---
-
-## 📂 Folder Structure
-
