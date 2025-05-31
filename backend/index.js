@@ -4,6 +4,9 @@ import mongoose from "mongoose";
 import { Book } from "./models/bookModel.js";
 import booksRoute from './routes/booksRoute.js';
 import cors from 'cors';
+import dotenv from 'dotenv';
+dotenv.config();
+
 
 const app = express();
 
@@ -33,8 +36,9 @@ mongoose
     .then(() => {
         console.log('App connected to database');
         app.listen(PORT, () => {
-            console.log(`App is listening to port: ${PORT}`);
         });
+        console.log(`App is listening to port: ${PORT}`);
+        console.log("url of mongo is here =",mongoDBURL)
     })
     .catch((error) => {
         console.log(error);

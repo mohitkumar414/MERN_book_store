@@ -1,5 +1,12 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 export const PORT = 5555;
 
-export const mongoDBURL = 'mongodb+srv://rajamohit2703:XyJyEOgQPNQ0Gq02@cluster0.jkvoovm.mongodb.net/books-collection?retryWrites=true&w=majority&appName=Cluster0'
+const URL = process.env.URL
+console.log("hello",URL)
+
+export const mongoDBURL = URL;
+
 
 //plaese create a free dtabase for yourself
